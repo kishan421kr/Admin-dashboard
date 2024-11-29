@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div id="main">
+      
+        <section>
+  
+          <h1>SIGN UP PAGE</h1>
+  
+          <div action="" id="Signupform">
+            <div>
+              <label for="fullname">Full Name</label><br />
+              <input type="text" id="fullname" placeholder="enter name here"/>
+              <br>
+              <span id="nameerror"></span>
+              <br>
+            </div>
+            
+            <div>
+              <label for="email">Email Address</label><br />
+            <input type="email" id="email" placeholder="enter email here" /><br>
+            <span id="emailerror"></span>
+            <br />
+            </div>
+            
+            <div>
+              <label for="phonenumber">Phone Number</label><br />
+            <input
+              type="number"
+              id="phonenumber"
+              placeholder="enter number here"
+            /> <br>
+            <span id="numbererror"></span><br />
+            </div>
+            
+            <div>
+              <label for="birthdate">Date of Birth</label><br />
+            <input type="date" id="birthdate" />
+            <br>
+            <span id="dateerror"></span><br />
+            </div>
+            
+            <div>
+              <label for="username">Username</label><br />
+            <input
+              type="text"
+              id="username"
+              placeholder="enter user name"
+            /> <br>
+            <span id="usernameerror"></span><br />
+            </div>
+            
+            <div>
+              <label for="password">Password</label><br />
+            <input
+              type="password"
+              id="password"
+              placeholder="enter password here"
+            />
+            <br>
+            <span id="passworderror"></span><br />
+            </div>
+            
+            <div>
+              <label for="cpassword">Confirm Password</label><br />
+            <input
+              type="password"
+              id="cpassword"
+              placeholder="re-enter password here"
+            /> <br>
+            <span id="cpassworderror"></span><br />
+            </div>
+            
+            
+            
+          </div>
+          <div>
+            <center><button onclick="checkdata()">Sign up</button></center>
+          </div>
+  
+          <div>Already have an account? <a href="index.html">login page</a></div>
+  
+        </section>
+  
+      </div>
+      <script src="/signup.js"></script>
+</body>
+</html>

@@ -2,20 +2,6 @@
   "client": [],
   "product": [
     {
-      "srnumber": "5465226",
-      "brandname": "Redtap",
-      "productname": "Sports Walking",
-      "price": "1474",
-      "id": "f739"
-    },
-    {
-      "id": "cdb4",
-      "srnumber": "45652145",
-      "brandname": "Redtap",
-      "productname": "Athleisure",
-      "price": "2309"
-    },
-    {
       "srnumber": "46222289",
       "brandname": "Jordan",
       "productname": "Jordan Air",

@@ -134,41 +134,41 @@ function dashshow(){
   document.querySelector("#about").style.display ="none";
   document.querySelector("#prodata").style.display="none";
   document.querySelector("#table").style.display = "block";
-  let a=document.querySelector("#bardash");
-  a.style.backgroundColor = "white";
-  a.style.color = "rgba(48, 142, 104, 0.986)";
+  // let a=document.querySelector("#bardash");
+  // a.style.backgroundColor = "white";
+  // a.style.color = "rgba(48, 142, 104, 0.986)";
   
 }
 function prodis(){
     document.querySelector("#table").style.display ="none";
     let storename = localStorage.getItem("name");
     document.querySelector("#prodata").innerHTML = "Welcome"+" "+storename;
-    let a=document.querySelector("#barprofile");
-  a.style.backgroundColor = "white";
-  a.style.color = "rgba(48, 142, 104, 0.986)";
+  //   let a=document.querySelector("#barprofile");
+  // a.style.backgroundColor = "white";
+  // a.style.color = "rgba(48, 142, 104, 0.986)";
 }
 function productdis(){
     document.querySelector("#btnadd").style.display = "block";
     document.querySelector("#table1").style.display ="none";
-    let a=document.querySelector("#barproduct");
-  a.style.backgroundColor = "white";
-  a.style.color = "rgba(48, 142, 104, 0.986)";
+  //   let a=document.querySelector("#barproduct");
+  // a.style.backgroundColor = "white";
+  // a.style.color = "rgba(48, 142, 104, 0.986)";
     
 }
 function aboutdis(){
     document.querySelector("#prodata").style.display="none";
     document.querySelector("#table").style.display ="none";
     document.querySelector("#about").style.display ="block";
-    let a=document.querySelector("#barabout");
-  a.style.backgroundColor = "white";
-  a.style.color = "rgba(48, 142, 104, 0.986)";
+  //   let a=document.querySelector("#barabout");
+  // a.style.backgroundColor = "white";
+  // a.style.color = "rgba(48, 142, 104, 0.986)";
 }
 function helpdis(){
   document.querySelector("#about").style.display ="none";
   document.querySelector("#prodata").style.display="none";
   document.querySelector("#table").style.display ="none";
   document.querySelector("#help").style.display ="block";
-  let a=document.querySelector("#barhelp");
-  a.style.backgroundColor = "white";
-  a.style.color = "rgba(48, 142, 104, 0.986)";
+  // let a=document.querySelector("#barhelp");
+  // a.style.backgroundColor = "white";
+  // a.style.color = "rgba(48, 142, 104, 0.986)";
 }

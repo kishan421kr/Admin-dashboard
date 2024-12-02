@@ -13,7 +13,7 @@
   
           <h1>LOGIN PAGE</h1>
   
-          <form action="" id="loginform">
+          <div  id="loginform">
 
            
             <label for="username">Username</label><br />
@@ -22,6 +22,8 @@
               id="username"
               placeholder="enter username here"
             /><br />
+            <span id="usernameerror"></span>
+            <br>
   
             <label for="password">Password</label><br />
             <input
@@ -29,10 +31,12 @@
               id="password"
               placeholder="enter password here"
             /><br />
+            <span id="passworderror"></span>
+            <br>
   
   
             <center><button onclick="check()">Login</button></center>
-          </form>
+          </div>
   
           <div>Don't have an account? <a href="signup.html">Sign up</a></div>
   

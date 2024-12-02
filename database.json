@@ -1,0 +1,85 @@
+{
+  "client": [],
+  "product": [
+    {
+      "srnumber": "5465226",
+      "brandname": "Redtap",
+      "productname": "Sports Walking",
+      "price": "1474",
+      "id": "f739"
+    },
+    {
+      "id": "cdb4",
+      "srnumber": "45652145",
+      "brandname": "Redtap",
+      "productname": "Athleisure",
+      "price": "2309"
+    },
+    {
+      "srnumber": "46222289",
+      "brandname": "Jordan",
+      "productname": "Jordan Air",
+      "price": "49999",
+      "id": "35e7"
+    },
+    {
+      "id": "0348",
+      "srnumber": "25654565",
+      "brandname": "Asics",
+      "productname": "Gel-Cumulus",
+      "price": "5060"
+    },
+    {
+      "id": "3580",
+      "srnumber": "85241634",
+      "brandname": "Puma",
+      "productname": "Court Gamer",
+      "price": "2099"
+    },
+    {
+      "id": "252f",
+      "srnumber": "86645612",
+      "brandname": "Adidas",
+      "productname": "Fluo M ",
+      "price": "1480"
+    },
+    {
+      "id": "33ac",
+      "srnumber": "62452135",
+      "brandname": "Puma",
+      "productname": "Coarse Sneakers",
+      "price": "1739"
+    },
+    {
+      "id": "9e78",
+      "srnumber": "35645628",
+      "brandname": "Adidas",
+      "productname": "Runesy M",
+      "price": "1591"
+    },
+    {
+      "id": "0a97",
+      "srnumber": "16567945",
+      "brandname": "Reebok",
+      "productname": "Sprint Zeal",
+      "price": "1248"
+    },
+    {
+      "id": "3593",
+      "srnumber": "56455648\t",
+      "brandname": "Campus\t",
+      "productname": "Ree-Flect\t",
+      "price": "2399"
+    }
+  ],
+  "admin": [
+    {
+      "name": "kishan",
+      "birthdate": "20 7 2000",
+      "number": 1234567890,
+      "password": "123456",
+      "username": "ajsjg123",
+      "id": "c820"
+    }
+  ]
+}

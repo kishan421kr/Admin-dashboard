@@ -5,46 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="main">
+    <div id="main1">
         <div id="navbar">
-            <article>FURNITO</article>
-            <article>
+            <article>SHOEZONE</article>
+            <!-- <article>
                 <input type="text" placeholder="Search">
-            </article>
+            </article> -->
             <article>
-                <img src="" alt="icone">
+                <a href="./index.html"><i class="fa-solid fa-user"></i></a>
+                <div id="usermessage"></div>
             </article>
         </div>
 
         <div id="hero">
             <article id="dashboard">
-                <div>Dashboard</div>
-                <div>Profile</div>
-                <div>collection</div>
-                <div>Product</div>
-                <div>About</div>
-                <div>Help</div>
+                <div onclick="dashshow()" id="bardash">Dashboard</div>
+                <div onclick="prodis()" id="barprofile">Profile</div>
+                <!-- <div>collection</div> -->
+                <div onclick="productdis()" id="barproduct">Product</div>
+                <div onclick="aboutdis()" id="barabou">About</div>
+                <div onclick="helpdis()" id="barhelp">Help</div>
             </article>
             <article id="table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sno.</th>
-                            <th>Brand</th>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
+                <div id="btndiv"><button onclick="add()" id="btnadd">ADD DATA</button></div>
+                <table  id="table1">
                     
-                    <tbody>
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Brand</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
                         
-                    </tbody>
+                        <tbody id="showdata">
+                            
+                        </tbody>
+                    
                 </table>
+                
             </article>
+
+            <!-- about section -->
+            <section id="about">
+              <div class="aboutcontainer">
+                <h2>About Us</h2>
+                <p>
+                  Welcome to <strong>ShoeZone</strong>, your ultimate destination for stylish, comfortable, and high-performance footwear. We are passionate about delivering shoes that not only look great but also feel amazing, empowering you to conquer every step with confidence.
+                </p>
+                <p>
+                  At StrideZone, we believe in combining innovation, craftsmanship, and cutting-edge design to bring you the best in footwear. Whether you're hitting the gym, heading to the office, or exploring the outdoors, we have the perfect pair for every occasion.
+                </p>
+                <p>
+                  Our mission is simple: to inspire movement and enhance your journey with every stride. Thank you for choosing us to be part of your journey. Let's make every step count!
+                </p>
+                <a href="" id="btn">Shop Now</a>
+              </div>
+            </section>
+
+            <!-- help section -->
+            <section id="help">
+              <div id="help1">
+                <h2 id="helpheading" style="color: rgb(48, 142, 104, 0.986);">Need Help? We're Here for You!</h2>
+                <p id="helpdescription">
+                  If you have any questions about our products or your order, check out our FAQs below or contact us for assistance.
+                </p>
+            
+                <div id="faq">
+                  <div>
+                    <h3>How do I place an order?</h3>
+                    <p>To place an order, browse our collection, add items to your cart, and proceed to checkout. You can pay securely using various payment methods.</p>
+                  </div>
+            
+                  <div>
+                    <h3>What is your return policy?</h3>
+                    <p>You can return items within 30 days of purchase. Items must be in their original condition. For more details, visit our Return Policy page.</p>
+                  </div>
+            
+                  <div>
+                    <h3>Do you offer free shipping?</h3>
+                    <p>Yes, we offer free shipping on orders above $50. Delivery times may vary based on your location.</p>
+                  </div>
+            
+                  <div>
+                    <h3>How can I track my order?</h3>
+                    <p>Once your order is shipped, you will receive a tracking link via email. You can also track your order through the "My Orders" section in your account.</p>
+                  </div>
+                </div>
+            
+                <button id="contactbtn">Contact Support</button>
+              </div>
+            </section>
+            
+            
+
+            <div><h1 id="prodata"></h1></div>
+            
         </div>
+
+        <div id="main" style="background: none">
+      
+            <section>
+      
+              <h1>NEW DATA</h1>
+              <i class="fa-solid fa-x" onclick="displayclose()"></i>
+              <div action="" id="Signupform">
+                <div>
+                  <label for="srnumber">Sr.Number</label><br />
+                  <input type="text" id="srnumber" placeholder="enter sr.number here"/>
+                  <br>
+                  <span id="nameerror"></span>
+                  <br>
+                </div>
+                
+                <div>
+                  <label for="brand">Brand Name</label><br />
+                <input type="text" id="brand" placeholder="enter brand here" /><br>
+                <span id="emailerror"></span>
+                <br />
+                </div>
+                
+                <div>
+                  <label for="product">Product Name</label><br />
+                <input
+                  type="text"
+                  id="product"
+                  placeholder="enter product name here"
+                /> <br>
+                <span id="numbererror"></span><br />
+                </div>
+                
+                <div>
+                  <label for="price">Price</label><br />
+                <input type="text" id="price" placeholder="enter price here"/>
+                <br>
+                <span id="dateerror"></span><br />
+                </div>
+                
+                
+              </div>
+              <div>
+                <center><button onclick="newdata()" style="">ADD DATA</button></center>
+              </div>
+      
+              
+      
+            </section>
+      
+          </div>
+          <div id="mainedit" style="background: none">
+      
+            
+      
+          </div>
+          <script src="/signup.js"></script>
+          <script src="/dash.js"></script>
 
     </div>
 </body>

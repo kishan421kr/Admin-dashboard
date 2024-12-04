@@ -172,3 +172,36 @@ function helpdis(){
   // a.style.backgroundColor = "white";
   // a.style.color = "rgba(48, 142, 104, 0.986)";
 }
+
+async function finddata(){
+  let data = await fetch("http://localhost:3000/product");
+  let alldata = await data.json();
+
+  let selectfind = document.querySelector("#findoption").value;
+  let selectinput = document.querySelector("#search").value;
+
+  if(selectfind === 'brand'){
+    alert("brand");
+    
+    let filtered = alldata.filter( () => alldata.brandname === selectinput);
+    let final_data = filtered.map ((t)=>`
+        
+        <tr id="tabledata">
+            <td>${t.srnumber}</td>
+            <td>${t.brandname}</td>
+            <td>${t.productname}</td>
+            <td>${t.price}</td>
+            <td><i class="fa-solid fa-trash-can-arrow-up" onclick="mydelete('${t.id}')"></i><i class="fa-solid fa-pen-fancy" onclick="editdata('${t.id}')"></i>
+
+        </tr>
+
+    `).join(" ");
+    document.getElementById("showdata").innerHTML = final_data;
+  }
+  else if(selectfind === 'product'){
+    alert("product");
+  }
+  else if(selectfind === 'price'){
+    alert("price");
+  }
+}

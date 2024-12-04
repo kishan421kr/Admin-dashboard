@@ -11,9 +11,19 @@
     <div id="main1">
         <div id="navbar">
             <article>SHOEZONE</article>
-            <!-- <article>
-                <input type="text" placeholder="Search">
-            </article> -->
+            <article>
+              <select name="" id="findoption" style="height: 30px;
+              width: 150px;
+              padding: 0px 0px 0px 20px;">
+                <option value="brand">brand</option>
+                <option value="product">product</option>
+                <option value="price">price</option>
+              </select>
+                <input type="text" id="search" placeholder="Search">
+                <button onclick="finddata()" style="height: 30px;
+                width: 150px;
+                ">Search</button>
+            </article>
             <article>
                 <a href="./index.html"><i class="fa-solid fa-user"></i></a>
                 <div id="usermessage"></div>
